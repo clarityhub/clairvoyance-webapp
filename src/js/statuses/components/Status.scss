@@ -1,0 +1,28 @@
+@import 'main';
+
+.status {
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
+
+.status__online {
+  background: $clair-success;
+  border: 1px solid $clair-success;
+}
+
+.status__offline {
+  background: $clair-coal;
+  border: 1px solid $clair-coal;
+}
+
+.statusFloater {
+  border: 2px solid $clair-wash;
+  bottom: -2px;
+  height: 12px;
+  width: 12px;
+  left: -10px;
+  position: relative;
+}

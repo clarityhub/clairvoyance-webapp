@@ -1,0 +1,49 @@
+@import 'main';
+
+.item {
+  padding: 0;
+  margin-bottom: 0;
+  
+  > button {
+    @extend %clair-text;
+    border-radius: 0;
+  }
+}
+
+.itemStatus {
+  text-align: center;
+}
+
+.itemStatusOpen,
+.itemStatusActive {
+  position: relative;
+
+  > span {
+    position: absolute;
+    left: 0;
+    transform: translate(0%, -50%);
+    top: 50%;
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.itemText {
+  min-width: 0;
+}
+
+.itemName {
+  font-size: rem(14px);
+  line-height: rem(18px);
+}
+
+.itemMessage {
+  @include truncate(100%);
+  // flex: 1;
+  font-size: rem(16px);
+  line-height: rem(21px);
+}
+
+.itemCreated {
+  text-align: right;
+}

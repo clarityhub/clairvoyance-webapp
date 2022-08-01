@@ -1,0 +1,15 @@
+@import 'main';
+
+.bubble {
+  background-color: $clair-primary;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+}
+
+.emptyBubble {
+  @extend .bubble;
+
+  background-color: $clair-gray;
+}

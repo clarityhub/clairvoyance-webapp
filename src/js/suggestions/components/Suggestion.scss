@@ -1,0 +1,73 @@
+@import 'main';
+
+// TODO this is very similar to .message from Message component
+.container {
+  @extend %clair-text;
+  background-color: $clair-wash;
+  border: 1px solid $clair-primary;
+  // sass-lint:disable property-sort-order
+  border-radius: rem(10px);
+  // sass-lint:enable property-sort-order
+  clear: left;
+  clear: right;
+  color: $clair-primary;
+  float: right;
+  font-size: rem(16px);
+  margin: 1px 0 7px;
+  width: 460px;
+  outline: none;
+  padding: 4px 12px;
+  position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  
+  &:first-of-type {
+    border-bottom-right-radius: 0;
+  }
+  
+  &:nth-of-type(2):not(:last-of-type) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    @include transition(color $fast ease-in);
+    background-color: transparent;
+    border: 0;
+    color: transparentize($clair-primary, 0.8);
+    font-size: rem(20px);
+
+    &:hover,
+    &:focus {
+      color: $clair-primary;
+    }
+  }
+}
+
+.actions {
+  float: right;
+  position: relative;
+  vertical-align: middle;
+}
+
+.message {
+  display: inline-block;
+  max-width: 70%; // TODO smaller on smaller screens
+  max-width: calc(100% - 96px);
+  padding-right: 12px;
+  padding-top: 8px;
+  vertical-align: middle;
+  line-height: rem(20px);
+}
+
+.tooltip {
+  display: inline-block;
+}

@@ -1,0 +1,14 @@
+.container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.openTabs {
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

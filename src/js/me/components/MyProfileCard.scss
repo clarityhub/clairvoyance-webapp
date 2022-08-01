@@ -1,0 +1,19 @@
+@import 'main';
+
+.myProfileCard {
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+
+  > button {
+    color: darken($clair-wash, 10%);
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: top;
+  }
+}
+
+.myProfileCardDropdown {
+  display: inline-block;
+  margin-left: 15px;
+}

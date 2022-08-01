@@ -1,0 +1,37 @@
+@import 'main';
+@import './layout';
+
+.banner {
+  color: $clair-light;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.priorityHigh {
+  background: $clair-danger;
+}
+
+.priorityInfo {
+  background: $clair-success;
+}
+
+.hideBanner {
+  display: none;
+}
+
+.bannerText {
+  @extend %p;
+  padding: 5px 0;
+  max-width: 800px;
+  display: inline-block;
+
+  button {
+    margin-left: 20px;
+  }
+
+  & + button {
+    color: $clair-light;
+    float: right;
+  }
+}

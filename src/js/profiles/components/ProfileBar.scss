@@ -1,0 +1,58 @@
+@import 'main';
+$max-text-width: 203px;
+
+.profileBar {
+  overflow: auto;
+  text-align: left;
+  padding: 20px;
+
+  h3 {
+    @include font-size(16px);
+    color: $clair-smoke;
+  }
+
+  textarea {
+    border-color: $clair-gray;
+    border-radius: 1px;
+  }
+}
+
+.profileHeadingAvatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profileHeadingTextContainer {
+  @include font-size(16px);
+  color: $clair-smoke;
+  display: inline-block;
+  margin-left: 8px;
+  text-align: left;
+  vertical-align: middle;
+  
+  > * {
+    margin: 0;
+  }
+  
+  h4 {
+    @include truncate($max-text-width);
+    @extend %clair-text;
+    line-height: rem(21px);
+    padding-bottom: 5px;
+  }
+  
+  p {
+    @include truncate($max-text-width);
+    color: lighten($clair-smoke, 10%);
+  }
+}
+
+.profileBarIntegrationIcons {
+  > *:not(:first-of-type) {
+    margin-left: 10px;
+  }
+}
+
+.defaultChatsText {
+  @include font-size(14px);
+}

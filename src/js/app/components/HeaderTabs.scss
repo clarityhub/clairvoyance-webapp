@@ -1,0 +1,16 @@
+@import 'main';
+@import 'layout';
+
+.headerTabs {
+  background-color: $clair-dark;
+  display: flex;
+  height: $header-height;
+  margin: 0;
+  overflow: auto;
+  position: relative;
+
+  > div {
+    bottom: 0;
+    position: absolute;
+  }
+}

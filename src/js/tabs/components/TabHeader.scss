@@ -1,0 +1,37 @@
+@import 'main';
+
+.tabHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    display: flex;
+    position: relative;
+  }
+}
+
+.tabHeaderIcon {
+  color: $clair-smoke;
+  left: -62px;
+  padding-right: 10px;
+  position: absolute;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabHeaderText {
+  color: $clair-smoke;
+  display: inline-block;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}

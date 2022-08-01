@@ -1,0 +1,74 @@
+@import 'main';
+
+.form {
+  display: flex;
+  margin-bottom: 3px;
+  flex-direction: column;
+
+  span {
+    @extend %p;
+  }
+}
+
+.formContainer {
+  @include clearfix;
+  background: $clair-wash;
+  padding: 10px;
+}
+
+.formJoin {
+  vertical-align: middle;
+
+  p {
+    color: $clair-coal;
+    display: inline-block;
+    font-size: rem(12px);
+    margin-left: 10px;
+  }
+}
+
+.formTextArea {
+  flex: 1;
+  min-height: 120px;
+  max-height: 175px;
+  padding: 10px;
+  background: $clair-wash;
+  margin-bottom: 3px;
+}
+
+.formAction {
+  @extend %button, %button--link;
+  min-width: 0;
+  text-align: left;
+}
+
+.formSend {
+  @extend %button, %button--primary;
+  @include clearfix;
+  @include font-size(16px);
+
+  border-radius: 4px;
+  color: $clair-light;
+  font-family: $clair-family-heading;
+  float: right;
+
+  min-width: 115px;
+  width: 115px;
+  padding: 5px 12px;
+  line-height: 1.1rem;
+
+  > span {
+    vertical-align: unset;
+
+    &:first-of-type {
+      float: left;
+    }
+    &:last-of-type {
+      float: right;
+
+      svg {
+        vertical-align: unset !important;
+      }
+    }
+  }
+}

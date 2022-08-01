@@ -1,0 +1,17 @@
+@import 'main';
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin-left: 53px;
+  }
+}
+
+.toolbarBubble {
+  left: 9px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,55 @@
+@import 'main';
+@import 'layout';
+
+.sidebar {
+  background-color: $clair-dark;
+  width: $sidebar-width;
+}
+
+.sidebarList {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+
+  li {
+    width: 100%;
+
+    button {
+      @extend %p;
+      @include transition(background-color, ease-out, $fast);
+      background-color: transparentize($clair-dark, 1);
+      border: 0;
+      color: $clair-wash; // actual: #DBDBDB
+      cursor: pointer;
+      padding: 12px;
+      position: relative;
+      text-align: left;
+      width: 100%;
+      
+      &:hover {
+        @include transition(background-color, ease-out, $fast);
+        background-color: transparentize($clair-primary, 0.9);
+      }
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+}
+
+.sidebarHeading {
+  @extend %h5;
+  font-family: $clair-family-text;
+  color: $clair-wash;
+  letter-spacing: 0.4px;
+  padding-left: 8px;
+}
+
+.sidebarNotification {
+  position: absolute;
+  left: 26px;
+  top: 42%;
+  transform: translate(-50%, -50%);
+}

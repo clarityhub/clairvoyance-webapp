@@ -1,0 +1,12 @@
+@import 'main';
+
+.application {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.columns {
+  display: flex;
+  height: 100%;
+}

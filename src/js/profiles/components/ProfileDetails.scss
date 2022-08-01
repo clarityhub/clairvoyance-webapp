@@ -1,0 +1,42 @@
+@import 'main';
+
+.profileCardTextContainer {
+  display: inline-block;
+  margin-left: 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.profileCardAvatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profileCardName {
+  @extend %p;
+  color: darken($clair-dark, 10%);
+}
+
+.profileCardStatus {
+  @extend %p;
+
+  color: darken($clair-dark, 10%);
+  font-size: rem(13px);
+
+  span {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.status {
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.status__online {
+  background: $clair-success;
+  border: 1px solid $clair-success;
+}

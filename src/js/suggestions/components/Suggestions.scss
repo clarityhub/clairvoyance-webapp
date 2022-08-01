@@ -1,0 +1,19 @@
+@import 'main';
+
+.suggestionsContainer {
+  @include clearfix;
+
+  clear: both;
+  margin-top: 20px;
+  position: relative;
+
+  > span {
+    @extend %p;
+
+    float: right;
+    font-size: rem(13px);
+    letter-spacing: 0.6px;
+  }
+}
+
+

@@ -1,0 +1,24 @@
+@import 'main';
+
+.content {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.leftPane {
+  flex: 1;
+}
+
+.rightPane {
+  background: $clair-light;
+  margin-left: 0;
+  width: 349px;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: $clair-dust;
+}

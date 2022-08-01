@@ -1,0 +1,10 @@
+.messages {
+  overflow: auto;
+}
+
+.messageScrollWrapper {
+  max-width: 598px;
+  padding-left: 60px;
+  padding-right: 10px; // 60 - avatarWidth
+  margin: 0 auto;  
+}

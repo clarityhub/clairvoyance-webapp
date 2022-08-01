@@ -1,0 +1,10 @@
+@import 'main';
+@import '../../app/components/layout';
+
+.content {
+  background: $clair-dust;
+  flex: 1;
+  height: calc(100% - #{$header-height});
+  overflow: auto;
+  overflow: overlay;
+}

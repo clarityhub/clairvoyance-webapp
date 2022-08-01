@@ -1,0 +1,43 @@
+@import 'main';
+$max-text-width: 203px;
+
+.profileCard {
+  display: inline-block;
+}
+
+.profileCardTextContainer {
+  display: inline-block;
+  margin-left: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.profileCardAvatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profileCardName {
+
+  span {
+    @extend %p;
+    @include truncate(($max-text-width - 18px));
+    color: $clair-wash;
+    display: inline-block;
+  }
+
+  > button {
+    color: darken($clair-wash, 10%);
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: top;
+  }
+}
+
+.profileCardCompanyName {
+  @extend %clair-text;
+  @include truncate($max-text-width);
+  color: #FFFFFF;
+  font-size: rem(24px);
+  line-height: rem(28px);
+}

@@ -1,0 +1,16 @@
+.chart {
+  margin: auto;
+  width: 500px;
+}
+
+.chart {
+  h2 {
+    span,
+    button {
+      vertical-align: middle;
+    }
+  }
+  > p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,97 @@
+@import 'main';
+
+$border-top: 3px;
+
+.tabContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.tab {
+  background-color: transparent;
+  border-bottom: 0;
+  border-left: 1px solid transparent;
+  border-radius: 0;
+  border-right: 1px solid transparent;
+  border-top: $border-top solid transparent;
+  cursor: pointer;
+  padding: 10px 25px 10px 10px;
+  transition: none;
+  // width: 150px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    > span {
+      color: $clair-light;
+    }
+  }
+
+  > span {
+    color: transparentize($clair-light, 0.2);
+    display: inline-block;
+    font-size: rem(12px);
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all $fast ease-in;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+.tabActive {
+  background-color: $clair-dust;
+  border-bottom: 0;
+  border-top: $border-top solid $clair-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    > span {
+      color: $clair-dark;
+    }
+  }
+
+  > span {
+    color: $clair-dark;
+  }
+}
+
+.tabClose {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  color: transparentize($clair-light, 0.9);
+  cursor: pointer;
+  font-size: rem(12px);
+  height: 22px;
+  line-height: 12px;
+  margin: 11px 7px;
+  padding: 0;
+  padding-bottom: 1px;
+  padding-right: 0;
+  position: absolute;
+  right: 0;
+  transition: all $fast ease-in;
+  width: 22px;
+
+
+  &:hover {
+    color: $clair-light;
+  }
+}
+
+.tabCloseActive {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  color: $clair-dark;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $clair-dark;
+    color: $clair-light;
+  }
+}

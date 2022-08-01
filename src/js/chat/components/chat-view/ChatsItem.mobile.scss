@@ -1,0 +1,65 @@
+@import 'main';
+@import './chatTableWidths';
+
+.item {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: $clair-dark;
+  display: flex;
+  height: 60px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+
+  &:visited {
+    color: $clair-dark;
+  }
+
+  &:focus,
+  &:active {
+    background-color: lighten($clair-primary, 20%);
+  }
+
+  > div {
+    @extend %clair-text;
+
+    display: inline-block;
+  }
+}
+
+.item + .item {
+  border-top: 1px solid #efefef;
+}
+
+.itemGroup {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemStatus {
+  text-align: center;
+}
+
+.itemMessage {
+  font-size: rem(12px);
+  line-height: rem(14px);
+  
+  overflow: hidden;
+  padding-right: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.itemCreated {
+  color: $clair-coal;
+  font-size: rem(12px);
+  text-align: right;
+  width: $createdWidth;
+}

@@ -1,0 +1,15 @@
+@import 'main';
+
+.accountsContent {
+  td {
+    @extend %p;
+  }
+
+  td:first-child {
+    font-weight: bold;
+  }
+
+  td:not(:first-child) {
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,90 @@
+@import 'main';
+
+$height: 500px;
+$width: 400px;
+
+$form-width: 250px;
+
+.loginView {
+  background: $clair-gradient-primary;
+  height: 100vh;
+  min-height: $height;
+  position: relative;
+  width: 100vw;
+}
+
+.loginFormContainer {
+  h2 {
+    @extend %h2;
+    color: $clair-light;
+    margin-top: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+}
+
+.loginForm {
+  margin-top: 30px;
+  position: relative;
+
+  input {
+    background-color: transparent;
+    color: $clair-light;
+  }
+
+  label {
+    color: $clair-light;
+  }
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    width: $form-width;
+  }
+
+  button {
+    border-color: $clair-light;
+    color: $clair-light;
+    margin: 60px auto;
+    width: $form-width;
+  }
+}
+
+.loginForgot {
+  @extend %p;
+
+  font-size: rem(12px);
+  text-align: center;
+
+  a {
+    color: $clair-light;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($clair-light, 0.1);
+    }
+  }
+}
+
+.loginRegister {
+  @extend %p;
+
+  font-size: rem(12px);
+  text-align: center;
+
+  a {
+    color: $clair-light;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($clair-light, 0.1);
+    }
+  }
+}
+
+.loginError {
+  background-color: $clair-light;
+  margin-bottom: 0;
+}
